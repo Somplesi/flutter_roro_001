@@ -21,17 +21,7 @@ class WebBar extends PreferredSize {
                   Expanded(
                       child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      HoverButton(
-                          button: ButtonObject(
-                              text: "Ma cuisine", destination: NextPage())),
-                      HoverButton(
-                          button: ButtonObject(
-                              text: "Mes recettes", destination: NextPage())),
-                      HoverButton(
-                          button: ButtonObject(
-                              text: "Blog", destination: NextPage()))
-                    ],
+                    children: menuButtonHover(),
                   )),
                   HoverButton(
                       button:
