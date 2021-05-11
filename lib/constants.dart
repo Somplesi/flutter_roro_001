@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_roro_001/pages/next_page.dart';
 import 'package:flutter_roro_001/widgets/hover_button.dart';
+import 'package:flutter_roro_001/widgets/url_button.dart';
+import 'package:flutter_roro_001/models/url_class.dart';
 
 import 'models/button_object.dart';
 
@@ -55,3 +57,11 @@ List<FloatingActionButton> getFloating() => containerButton
 
 List<HoverButton> getCardHoverButton() =>
     containerButton.map((e) => HoverButton(button: e)).toList();
+
+List<UrlClass> networks = [
+  UrlClass(name: "Twitter", url: "https://www.twitter.com"),
+  UrlClass(name: "RodData", url: "https://www.roddata.net")
+];
+
+List<UrlButton> getSocialButtons() =>
+    networks.map((e) => UrlButton(urlClass: e)).toList();
