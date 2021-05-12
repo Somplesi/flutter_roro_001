@@ -5,6 +5,7 @@ import 'package:flutter_roro_001/widgets/url_button.dart';
 import 'package:flutter_roro_001/models/url_class.dart';
 
 import 'models/button_object.dart';
+import 'models/review.dart';
 
 String birthdayImage = "images/bday.jpg";
 String brownieImage = "images/brownie.jpg";
@@ -65,3 +66,35 @@ List<UrlClass> networks = [
 
 List<UrlButton> getSocialButtons() =>
     networks.map((e) => UrlButton(urlClass: e)).toList();
+
+//Quote
+String quote =
+    "Pour bien cuisiner il faut de bons ingrédients, un palais, du coeur et des amis.";
+String author = "Pierre Perret";
+
+//About me
+String aboutMe =
+    "Ne vous fiez pas à mes apparences. Sous mon air sauvage se cache un fin gourmet.\n Grâce à mes fines griffes et mes coussinets moelleux, je saurai vous préparer de succulents petits plats.";
+
+//Review
+Review archi = Review(
+    name: "Archibald",
+    image: grumpyImage,
+    comment: "Horrible ! Ces donuts étaient trop bons");
+Review moustache =
+    Review(name: "Moustache", image: pleaseImage, comment: "Gâteauuuuuuu!");
+Review fleur = Review(
+    name: "Fleur",
+    image: flowersImage,
+    comment: "C'était trop bon! J'ai même gardé la déco fleur du gâteau");
+Review leche = Review(
+    name: "Mistigri",
+    image: lecheImage,
+    comment: "Je m'en lèche encore les babines de mon cookie");
+Review gourmand = Review(
+    name: "Gourmand", image: mouthImage, comment: "Humain! Encore du gâteau");
+Review dog = Review(
+    name: "Medor",
+    image: dogImage,
+    comment:
+        "Depuis que j'ai gouté les cupcakes d4athena, je me déguise qu'lle me prenne pour un chat");

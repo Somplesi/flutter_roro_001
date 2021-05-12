@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_roro_001/models/make_it_responsive.dart';
-import 'package:flutter_roro_001/widgets/container_button.dart';
-import 'package:flutter_roro_001/widgets/container_text_and_image.dart';
+import 'package:flutter_roro_001/sections/about_me_section.dart';
+import 'package:flutter_roro_001/sections/contact_section.dart';
+import 'package:flutter_roro_001/sections/occasion_section.dart';
+import 'package:flutter_roro_001/sections/quote_section.dart';
+import 'package:flutter_roro_001/sections/review_section.dart';
 import 'package:flutter_roro_001/widgets/drawer_small.dart';
 import 'package:flutter_roro_001/widgets/phone_bar.dart';
-import 'package:flutter_roro_001/widgets/top_stack.dart';
+import 'package:flutter_roro_001/sections/top_stack.dart';
 import 'package:flutter_roro_001/widgets/web_bar.dart';
 
 class HomePage extends StatefulWidget {
@@ -23,7 +26,14 @@ class HomeState extends State<HomePage> {
       drawer: DrawerSmall(),
       body: SingleChildScrollView(
         child: Column(
-          children: [TopStack()],
+          children: [
+            TopStack(),
+            OccasionSection(),
+            AboutMeSection(),
+            QuoteSection(),
+            ReviewSection(),
+            ContactSection()
+          ],
         ),
       ),
     );
