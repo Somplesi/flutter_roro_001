@@ -23,7 +23,7 @@ class HomeState extends State<HomePage> {
   setupScrollListener() {
     setState(() {
       _currentUserPosition = _scrollController.position.pixels;
-      print(_currentUserPosition);
+      //print(_currentUserPosition);
     });
   }
 
