@@ -7,13 +7,14 @@ import 'package:flutter_roro_001/widgets/hover_button.dart';
 
 class WebBar extends PreferredSize {
   Size size;
+  double opacity;
 
-  WebBar({@required this.size})
+  WebBar({@required this.size, @required this.opacity})
       : super(
             preferredSize: Size((size.width), (size.height / 3)),
             child: Container(
               padding: EdgeInsets.all(10),
-              color: pinkColor,
+              color: pinkColor.withOpacity(opacity),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
